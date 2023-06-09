@@ -9,7 +9,7 @@ class TossPaymentHelper(private val paymentRepository: PaymentRepository): Payme
     }
 
     override fun pay(paymentPayRequest: PaymentPayRequest) {
-        paymentRepository.save()
+        // paymentRepository.save()
     }
 
     companion object {

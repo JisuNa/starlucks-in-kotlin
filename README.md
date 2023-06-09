@@ -1,10 +1,14 @@
 # starlucks
 
+## Getting Started
+
+
+
 ## Convention
 
 ### Code Style
 
-ktlint 스타일을 idea에 적용합니다.
+Apply ktlint style to Idea
 
 ```shell
 $ ./gradlew ktlintApplyToIdea
