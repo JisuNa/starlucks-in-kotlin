@@ -1,9 +1,8 @@
 plugins {
     idea
+    application
     kotlin("jvm") version "1.8.10"
     kotlin("plugin.spring") version "1.8.10"
-    kotlin("plugin.jpa") version "1.8.10"
-    kotlin("kapt") version "1.8.10"
     id("org.springframework.boot") version "3.0.4"
     id("io.spring.dependency-management") version "1.1.0"
 }
@@ -21,7 +20,6 @@ dependencies {
     implementation(project(":payment"))
 
     implementation("org.springframework.boot:spring-boot-starter-web")
-    // https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
     implementation("com.mysql:mysql-connector-j:8.0.33")
 
 }

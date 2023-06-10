@@ -1,6 +1,6 @@
 package com.starlucks.payment.helper
 
-import com.starlucks.payment.dto.request.PaymentPayRequest
+import com.starlucks.payment.presentation.request.PaymentPayRequest
 
 interface PaymentHelper {
     fun getName(): String

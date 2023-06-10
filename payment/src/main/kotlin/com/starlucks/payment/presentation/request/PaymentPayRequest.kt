@@ -1,4 +1,4 @@
-package com.starlucks.payment.dto.request
+package com.starlucks.payment.presentation.request
 
 data class PaymentPayRequest(
     val orderId: Long,
