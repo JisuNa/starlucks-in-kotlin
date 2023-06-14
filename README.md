@@ -21,9 +21,9 @@
 </div>
 
 
-## 이슈와 해결과정
+## Trouble Shooting
 
-
+- [Kotlin Entity All Open 이 동작하지 않는다.](https://github.com/JisuNa/TIL/blob/main/TroubleShooting/kotlin-entity-all-open.md)
 
 ## Getting Started
 
