@@ -2,4 +2,5 @@ rootProject.name = "starlucks"
 
 include("app")
 include("payment")
-include("notification")
+include("member")
+include("member")

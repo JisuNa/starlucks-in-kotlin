@@ -13,8 +13,7 @@ class PaymentController(
     private val paymentManager: PaymentManager
 ) {
     @PostMapping
-    fun pay(@RequestBody paymentPayRequest: PaymentPayRequest): String {
+    fun pay(@RequestBody paymentPayRequest: PaymentPayRequest) {
         paymentManager.pay(paymentPayRequest)
-        return "a"
     }
 }
