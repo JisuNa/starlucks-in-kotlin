@@ -18,6 +18,7 @@ subprojects {
 
 dependencies {
     implementation(project(":payment"))
+    implementation(project(":notification"))
 
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.mysql:mysql-connector-j:8.0.33")

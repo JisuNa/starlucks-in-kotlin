@@ -20,6 +20,16 @@
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" />
 </div>
 
+## Business
+
+| Lv1 | Lv2  | Lv3       |
+|-----|------|-----------|
+| 회원  | 회원관리 | 회원 가입     |
+| 회원  | 회원관리 | 아이디 중복 확인 |
+| 회원  | 회원관리 | 회원 로그인    |
+| 회원  | 회원관리 | 회원 로그아웃   |
+| 회원  | 회원관리 | 회원 탈퇴     |
+
 
 ## Trouble Shooting
 
@@ -29,7 +39,7 @@
 
 ### 환경 세팅
 
-docker-compose를 사용하여 필요한 환경 세팅합니다. 
+docker-compose를 사용하여 필요한 환경 세팅합니다.
 
 1. 필요한 docker-compose.yml 파일을 작성합니다.
     ```yaml
@@ -64,6 +74,7 @@ docker-compose를 사용하여 필요한 환경 세팅합니다.
 ### Code Style
 
 코드 스타일은 Ktlint를 사용합니다.
-    ```shell
-    $ ./gradlew ktlintApplyToIdea
-    ```
+
+```shell
+$ ./gradlew ktlintApplyToIdea
+```
