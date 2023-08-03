@@ -7,10 +7,10 @@ spring:
         url: jdbc:mysql://localhost:3306/starlucks?allowPublicKeyRetrieval=true&useSSL=false
         username: root
         password: root
-#    flyway:
-#        user: root
-#        password: root
-#        url: jdbc:mysql://localhost:3306/starlucks?allowPublicKeyRetrieval=true&useSSL=false
+    flyway:
+        user: root
+        password: root
+        url: jdbc:mysql://localhost:3306/starlucks?allowPublicKeyRetrieval=true&useSSL=false
     jpa:
         hibernate:
             ddl-auto: none

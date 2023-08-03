@@ -20,8 +20,10 @@ dependencies {
     implementation(project(":payment"))
 
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("com.mysql:mysql-connector-j:8.0.33")
 
+    implementation("com.mysql:mysql-connector-j:8.0.33")
+    implementation("org.flywaydb:flyway-core:9.16.0")
+    implementation("org.flywaydb:flyway-mysql")
 }
 
 tasks {

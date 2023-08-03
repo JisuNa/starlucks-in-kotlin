@@ -1,0 +1,8 @@
+CREATE TABLE MEMBER
+(
+    id         BIGINT(10) UNSIGNED NOT NULL AUTO_INCREMENT UNIQUE,
+    email      VARCHAR(20)         NOT NULL UNIQUE COMMENT '이메일',
+    `password` VARCHAR(60)         NOT NULL COMMENT '비밀번호',
+    nickname   VARCHAR(20)         NOT NULL UNIQUE COMMENT '사용자명',
+    CONSTRAINT PRIMARY KEY (ID)
+);
