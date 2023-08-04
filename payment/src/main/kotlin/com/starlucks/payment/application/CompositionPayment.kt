@@ -1,12 +1,12 @@
-package com.starlucks.payment.helper
+package com.starlucks.payment.application
 
 import org.springframework.stereotype.Component
 
 @Component
 class CompositionPayment(
-    pss: List<PaymentHelper>
+    pss: List<PaymentExecutor>
 ) {
-    private val map: MutableMap<String, PaymentHelper> = HashMap()
+    private val map: MutableMap<String, PaymentExecutor> = HashMap()
 
     init {
         pss.forEach {
@@ -14,7 +14,7 @@ class CompositionPayment(
         }
     }
 
-    fun getPaymentImpl(paymentTarget: String): PaymentHelper {
+    fun getPaymentImpl(paymentTarget: String): PaymentExecutor {
         return map[paymentTarget] ?: throw RuntimeException()
     }
 }

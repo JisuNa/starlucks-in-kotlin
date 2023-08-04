@@ -1,8 +1,10 @@
 package com.starlucks.payment.application.processor
 
-import com.starlucks.payment.helper.CompositionPayment
+import com.starlucks.payment.application.CompositionPayment
 import com.starlucks.payment.presentation.request.PaymentPayRequest
+import org.springframework.transaction.annotation.Transactional
 
+@Transactional
 class PaymentProcessor(
     private val compositionPayment: CompositionPayment
 ) {

@@ -22,13 +22,15 @@
 
 ## Business
 
-| Lv1 | Lv2  | Lv3       |
-|-----|------|-----------|
-| 회원  | 회원관리 | 회원 가입     |
-| 회원  | 회원관리 | 아이디 중복 확인 |
-| 회원  | 회원관리 | 회원 로그인    |
-| 회원  | 회원관리 | 회원 로그아웃   |
-| 회원  | 회원관리 | 회원 탈퇴     |
+### 명세
+<div>
+<img src="./docs/imgs/business.png" alt="" width="300"/>
+</div>
+
+### 모듈간의 의존관계
+<div>
+<img src="./docs/imgs/모듈간의의존관계.png" alt="" width="300"/>
+</div>
 
 ## Trouble Shooting
 

@@ -1,8 +1,8 @@
 package com.starlucks.payment.infrastructure.config
 
 import com.starlucks.payment.application.processor.PaymentProcessor
-import com.starlucks.payment.helper.CompositionPayment
-import com.starlucks.payment.helper.TossPaymentHelper
+import com.starlucks.payment.application.CompositionPayment
+import com.starlucks.payment.infrastructure.pay.TossPaymentExecutor
 import com.starlucks.payment.domain.repository.PaymentRepository
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -15,5 +15,5 @@ class PaymentConfig {
     }
 
     @Bean
-    fun tossPaymentHelper(paymentRepository: PaymentRepository) = TossPaymentHelper(paymentRepository)
+    fun tossPaymentHelper(paymentRepository: PaymentRepository) = TossPaymentExecutor(paymentRepository)
 }
